@@ -36,18 +36,18 @@ export default function CardStats({
             </div>
           </div>
           <p className="text-sm text-blueGray-400 mt-4">
-            <span className={statPercentColor + " mr-2"}>
-              <i
-                className={
-                  statArrow === "up"
-                    ? "fas fa-arrow-up"
-                    : statArrow === "down"
-                    ? "fas fa-arrow-down"
-                    : ""
-                }
-              ></i>{" "}
-              {statPercent}%
-            </span>
+            {/*<span className={statPercentColor + " mr-2"}>*/}
+            {/*  <i*/}
+            {/*    className={*/}
+            {/*      statArrow === "up"*/}
+            {/*        ? "fas fa-arrow-up"*/}
+            {/*        : statArrow === "down"*/}
+            {/*        ? "fas fa-arrow-down"*/}
+            {/*        : ""*/}
+            {/*    }*/}
+            {/*  ></i>{" "}*/}
+            {/*  {statPercent}%*/}
+            {/*</span>*/}
             <span className="whitespace-nowrap">{statDescripiron}</span>
           </p>
         </div>
@@ -57,12 +57,12 @@ export default function CardStats({
 }
 
 CardStats.defaultProps = {
-  statSubtitle: "Traffic",
+  statSubtitle: "Outreached",
   statTitle: "350,897",
   statArrow: "up",
   statPercent: "3.48",
   statPercentColor: "text-emerald-500",
-  statDescripiron: "Since last month",
+  statDescripiron: "Outreached clients",
   statIconName: "far fa-chart-bar",
   statIconColor: "bg-red-500",
 };
